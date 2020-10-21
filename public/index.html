@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="rwd" lang="en" style="opacity: 1;">
+	<head>
+        <meta charset='UTF-8'>
+        <title>Helpdesk Quant</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <link rel="shortcut icon" type="image/jpg" href="favicon/favicon.ico" />
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src='js/index.js'></script>
+        <link id="day" type="text/css" rel="stylesheet" href="res/css/style.css"/>
+    </head>
+    <body>
+        <header class="header">
+            <img src="res/img/quant-logo-small.png" alt="quant logo" class="logo">
+            <nav class="user-nav"></nav>
+        </header>
+        <div class="title">
+            <h1>Helpdesk <span class="yellow">CCD Agents</span></h1>
+            <h2>Availability overview</h2>
+        </div>
+        <div class="content">
+            <img id="loading-image" src="res/img/loading.gif">
+            <table class="container">
+                <thead class="table__header">
+                    <tr id="topRow">
+                        <th class="th-gen" id="name">Name</th>
+                        <th class="th-gen-active" id="extension">Extension nr <span class="glyphicon glyphicon-sort"></th>
+                        <th class="th-gen" id="station">Station nr</span></th>
+                        <th class="th-gen" id="pg">Processing group</span></th>
+                        <th class="th-gen" id="state">Agent state</span></th>
+                        <th class="th-gen" id="unavailable">Unavailable type</span></th>
+                        <th class="th-gen" id="dynamic">Dynamic state</span></th>
+                        <th class="th-gen" id="office">@Quant</span></th>
+                    </tr>
+                </thead>
+                <tbody id="tbody" class="table__body"></tbody>
+            </table> 
+            <div class="footer yellow">
+                <span>© 2020 SDF | www.quant.be</span>
+            </div>
+        </div>
+    </body>
+</html>

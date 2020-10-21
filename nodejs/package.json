@@ -1,0 +1,19 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "json-server": "json-server --watch db.json --port 3007 --host \"10.28.34.34\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "g": "^2.0.1",
+    "json-server": "^0.16.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.4"
+  }
+}
