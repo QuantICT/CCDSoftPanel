@@ -14,124 +14,124 @@
 }
 
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: 'Archivo Narrow', sans-serif;
-	font-size: 1.5rem;
-	line-height: 1.5rem;
-	/* background-color: #fefefe; */
-	background: #fefefe;
-	background-attachment: fixed;
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: flex-start;
-	align-items: stretch;
-	min-height: 100vh;
-	/* width: 100%;
-	height: 100%; */
+  font-family: 'Archivo Narrow', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  background: #fefefe;
+  background-attachment: fixed;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-height: 100vh;
 }
 
 .line {
-	background: transparent;
-	
+  background: transparent;
 }
 
 canvas {
-	
-	background-color: transparent;
-	position: absolute;
+  background-color: transparent;
+  position: absolute;
 }
 
-.my-path {
-	fill: #fefefe;
+#outer-bow {
+  fill: rgba(242, 146, 0, 1);
+  opacity: 0;
 }
 
-.my-circle {
-	fill: #fefefe;
+#grey-bow-1,
+#grey-bow-2,
+#grey-bow-3 {
+  fill: rgba(156, 154, 155, 1);
+  opacity: 0;
 }
 
 .yellow {
-	color: #ffee00;
+  color: #ffee00;
 }
 
 .springgreen {
-	color: darkgreen;
+  color: darkgreen;
 }
 
 .darkgreen {
-	color: darkgreen;
+  color: darkgreen;
 }
 
 .deepskyblue {
-	color: deepskyblue;
+  color: deepskyblue;
 }
 
 .deeppink {
-	color: deeppink;
+  color: deeppink;
 }
 
 .crimson {
-	color: crimson;
+  color: crimson;
 }
 
 .darkorange {
-	color: darkorange;
+  color: darkorange;
 }
 
 .uppercase {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .table {
-	margin-top: 4rem;
-	border: 1px solid rgba(51,51,51,.2);
+  margin-top: 4rem;
+  border: 1px solid rgba(51, 51, 51, 0.2);
 }
 
 thead tr {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .animation-wrapper {
-	flex: 1;
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	align-items: center;
+  flex: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .sphere-animation {
-	z-index: 500;
+  z-index: 500;
 }
 
 .sphere path {
-	stroke-width: 1px;
-	backface-visibility: hidden;
-} 
+  stroke-width: 1px;
+  backface-visibility: hidden;
+}
 
 @media (min-width: 500px) {
-	.sphere path {
-		stroke-width: .4px;
-	}
+  .sphere path {
+    stroke-width: 0.4px;
+  }
 }
 
 .footer {
-	/* position: fixed;
-	left: 0;
-	bottom: 0; */
-	padding-bottom: 10px;
-	padding-top: 10px;
-	width: 100%;
-	text-align: center;
-	border-top: 1px solid rgba(51,51,51,.2);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid rgba(51, 51, 51, 0.2);
 }
 
 .fade-in {
-	animation: fadeIn ease 2s;
+  animation: fadeIn ease 2s;
 }
 
 @keyframes fadeIn {
-	0% { opacity: 0; }
-	100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
