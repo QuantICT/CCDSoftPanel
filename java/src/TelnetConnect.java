@@ -29,24 +29,23 @@ public class TelnetConnect {
 			readUntil("Password: ");
 			write(PASSWORD);
 			readUntil(PROMPT);
-			
-			
-		} catch(Exception e) {
+
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public String readUntil(String pattern) {
 		try {
 			char lastChar = pattern.charAt(pattern.length() - 1);
 			StringBuffer sb = new StringBuffer();
 			// boolean found = false;
 			char ch = (char) in.read();
-			while(true) {
+			while (true) {
 				// System.out.print(ch);
 				sb.append(ch);
-				if(ch == lastChar) {
-					if(sb.toString().endsWith(pattern)) {
+				if (ch == lastChar) {
+					if (sb.toString().endsWith(pattern)) {
 						return sb.toString();
 					}
 				}
@@ -57,16 +56,16 @@ public class TelnetConnect {
 		}
 		return null;
 	}
-	
+
 	public void write(String value) {
 		try {
 			ps.println(value);
 			ps.flush();
-		} catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void disconnect() {
 		try {
 			tc.disconnect();
