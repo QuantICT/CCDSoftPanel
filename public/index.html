@@ -13,18 +13,16 @@
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&display=swap" rel="stylesheet">
 	<script src="res/js/table.js"></script>
-	
 	<link type="text/css" rel="stylesheet" href="res/css/style.css">
 </head>
 <body>
-	<canvas class="fireworks"></canvas>
 	<div class="content">
 		<img src="res/img/loading.gif" alt="" id="loading-image" style="display: none;">
 		<table class="table">
 			<thead class="table__header">
 				<tr id="topRow">
 					<th class="th-gen" id="name">Name</th>
-					<th class="th-gen-active" id="extension">Extension nr <span class="glyphicon glyphicon-sort"></span></th>
+					<th class="th-gen-active" id="extension">Agent nr <span class="glyphicon glyphicon-sort"></span></th>
 					<th class="th-gen" id="station">Station nr</th>
 					<th class="th-gen" id="pg">Processing group</th>
 					<th class="th-gen" id="state">Agent state</th>
@@ -55,16 +53,16 @@
 				<g transform="matrix(1.3333333,0,0,-1.3333333,0,112.26667)" id="g10" class="quant-logo">
 					<g transform="scale(0.1)" id="g12" class="lines">
 						<!-- grey-bow-1-->
-						<path class="my-path" 
+						<path class="my-path" id="grey-bow-1"
 							d="m 668.109,421.012 c 0,-136.504 -110.691,-247.098 -247.148,-247.098 -136.484,0 -247.078,110.613 -247.078,247.098 0,54.914 82.344,54.914 82.344,0 0,-90.996 73.757,-164.735 164.734,-164.735 90.996,0 164.785,73.77 164.785,164.735 0,54.914 82.363,54.914 82.363,0" />
 						<!-- grey-bow-2-->
-						<path class="my-path" 
+						<path class="my-path" id="grey-bow-2"
 							d="m 1212.36,595.727 c 96.46,-96.497 96.38,-252.957 -0.08,-349.45 -96.52,-96.496 -252.96,-96.496 -349.444,0 -96.492,96.493 -96.492,252.953 0,349.45 38.801,38.832 97.043,-19.375 58.234,-58.239 -153.379,-153.39 79.56,-386.328 232.98,-232.98 64.33,64.367 64.36,168.668 0.05,232.98 -38.83,38.864 19.4,97.071 58.26,58.239" />
 						<!-- grey-bow-3 -->
-						<path class="my-path" 
+						<path class="my-path" id="grey-bow-3"
 							d="m 1654.15,668.09 c 136.43,0 247.1,-110.621 247.1,-247.078 0,-136.485 -110.67,-247.098 -247.1,-247.098 -136.48,0 -247.09,110.613 -247.09,247.098 0,136.457 110.61,247.078 247.09,247.078 z m 0,-82.34 c -90.99,0 -164.73,-73.77 -164.73,-164.738 0,-90.996 73.74,-164.735 164.73,-164.735 90.97,0 164.73,73.739 164.73,164.735 0,90.968 -73.76,164.738 -164.73,164.738" />
 						<!-- orange-circles-->
-						<path class="my-circle" 
+						<path class="my-circle" id="outer-bow"
 							d="m 1654.15,842 c 232.5,0 421.02,-188.48 421.02,-420.988 0,-232.508 -188.52,-421.01590625 -421.02,-421.01590625 -121.8,0 -231.46,51.73050625 -308.31,134.31690625 C 1269.03,51.7266 1159.35,-0.00390625 1037.57,-0.00390625 915.816,-0.00390625 806.078,51.7266 729.293,134.313 652.445,51.7266 542.789,-0.00390625 420.992,-0.00390625 188.48,-0.00390625 0.00390625,188.504 0.00390625,421.012 0.00390625,653.523 188.48,842 420.992,842 542.789,842 652.445,790.277 729.293,707.719 806.078,790.277 915.816,842 1037.57,842 1159.35,842 1269.03,790.277 1345.84,707.719 1422.69,790.277 1532.35,842 1654.15,842 Z m 0,-100.699 c -155.93,0 -230.61,-88.879 -308.31,-204.996 -77.66,116.117 -152.39,204.996 -308.27,204.996 -155.914,0 -230.613,-88.879 -308.277,-204.996 -77.695,116.117 -152.395,204.996 -308.301,204.996 -176.914,0 -320.293,-143.406 -320.293,-320.289 0,-176.903 143.379,-320.34 320.293,-320.34 155.906,0 230.606,88.906 308.301,205.019 77.664,-116.113 152.363,-205.019 308.277,-205.019 155.88,0 230.61,88.906 308.27,205.019 77.7,-116.113 152.38,-205.019 308.31,-205.019 176.91,0 320.32,143.437 320.32,320.34 0,176.883 -143.41,320.289 -320.32,320.289" />
 					</g>
 				</g>
@@ -72,12 +70,9 @@
 		</div>
 	</div>
 	<footer class="footer">
-		<!--<img src="res/img/quant-logo-small.png" alt="quant logo" class="logo">-->
 		<span class="glyphicon glyphicon-copyright-mark deepskyblue"></span>
-		<span class="deepskyblue">2020 </span><span class="crimson">SDF</span> quant.be
+		<span class="deepskyblue" id="year"> </span><span class="crimson">SDF</span> quant.be
 	</footer>
 	<script src="res/js/anime.js"></script>
-	<script src="res/js/canvas.js"></script>
-	
 </body>
 </html>
