@@ -1,4 +1,8 @@
 $(document).ready(() => {
+
+	let year = new Date().getFullYear();
+	$('#year').text(year + " ");
+
 	$('#loading-image').hide();
 	displayAgents();
 	setInterval(updateAgentsTable, 5000);
