@@ -26,8 +26,9 @@ public class DBConnector {
 		try {
 			// load and register JDBC driver for MySQL
 			Class.forName("com.mysql.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mysql://" + DB_IP_ADDRESS + ":" + DB_PORT + "/" + DB + "?useSSL=false",
-					DB_USERNAME, DB_PASSWORD);
+			conn = DriverManager.getConnection(
+					"jdbc:mysql://" + DB_IP_ADDRESS + ":" + DB_PORT + "/" + DB + "?useSSL=false", DB_USERNAME,
+					DB_PASSWORD);
 		} catch (SQLException e) {
 			System.out.println("Connection failed ! Check output console");
 			e.printStackTrace();
@@ -35,7 +36,6 @@ public class DBConnector {
 		}
 	}
 
-	
 	// Close the resultSet
 	public static void dbDisconnect() throws SQLException {
 		try {
@@ -82,10 +82,11 @@ public class DBConnector {
 		// return CachedRowSet
 		return crs;
 	}
-	
+
 	// DB Execute Update (For Update/Insert/Delete) Operation
-	public static void dbExecuteUpdate(String sqlStatement) throws SQLException, ClassNotFoundException, FileNotFoundException, IOException {
-			// Declare statement as null
+	public static void dbExecuteUpdate(String sqlStatement)
+			throws SQLException, ClassNotFoundException, FileNotFoundException, IOException {
+		// Declare statement as null
 		Statement statement = null;
 		try {
 			// Connect to DB
