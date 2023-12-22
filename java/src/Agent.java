@@ -1,8 +1,6 @@
 
 
 public class Agent implements Comparable<Agent> {
-	
-	
 	private String agentName;
 	private String agentExtension;
 	private String agentStation;
@@ -135,7 +133,4 @@ public class Agent implements Comparable<Agent> {
 	public int compareTo(Agent agent) {
 		return this.getAgentSurname().compareTo(agent.getAgentSurname());
 	}
-	
-	
-	
 }
