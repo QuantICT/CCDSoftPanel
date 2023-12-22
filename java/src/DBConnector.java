@@ -15,7 +15,7 @@ public class DBConnector {
 	
 	private static Connection conn = null;
 
-	private static ResourceBundle rb = ResourceBundle.getBundle("otrs");
+	private static ResourceBundle rb = ResourceBundle.getBundle("db");
 	final static String DB_IP_ADDRESS = rb.getString("consumer.dbIpAddress").trim();
 	final static String DB_PORT = rb.getString("consumer.dbPort").trim();
 	final static String DB_USERNAME = rb.getString("consumer.dbUsername").trim();
